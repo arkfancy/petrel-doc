@@ -12,6 +12,9 @@
 
 ## 扩展
 
+* [编码规则](kuo-zhan/bian-ma-gui-ze.md)
+  * [编码规则字段说明](kuo-zhan/bian-ma-gui-ze/bian-ma-gui-ze-zi-duan-shuo-ming.md)
+
 ## 运维部署
 
 ## 支持
