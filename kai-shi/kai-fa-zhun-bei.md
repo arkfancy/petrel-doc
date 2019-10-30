@@ -10,9 +10,9 @@
 
 java开发工具包。
 
-官方网址：[https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+当前公司统一使用版本为 JDK1.8。
 
-> 当前公司统一使用版本为1.8。
+官方网址：[https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ### Eclipse IDE
 
@@ -44,7 +44,7 @@ Git管理工具。
 
 官方网址：[https://www.sourcetreeapp.com/](https://www.sourcetreeapp.com/)
 
-> sourcetree注册使用使用\(跳过注册直接使用\)：[https://blog.csdn.net/woyvzhuixun/article/details/80671921](https://blog.csdn.net/woyvzhuixun/article/details/80671921)
+sourcetree注册使用使用\(跳过注册直接使用\)：[https://blog.csdn.net/woyvzhuixun/article/details/80671921](https://blog.csdn.net/woyvzhuixun/article/details/80671921)
 
 ### Dbeaver
 
@@ -57,6 +57,12 @@ Git管理工具。
 文本编辑器。
 
 官方网址：[https://notepad-plus-plus.org/](https://notepad-plus-plus.org/)
+
+### Postman
+
+接口调试工具。
+
+官方网址：[https://www.getpostman.com/](https://www.getpostman.com/)
 
 ---
 
