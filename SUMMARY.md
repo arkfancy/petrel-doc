@@ -18,8 +18,8 @@
 
 ## 运维部署
 
-* [发版指引](yun-wei-bu-shu/da-bao-zhi-yin.md)
-  * [初次发版准备](yun-wei-bu-shu/chu-ci-da-bao.md)
+* [打包指引](yun-wei-bu-shu/da-bao-zhi-yin.md)
+  * [初次打包准备](yun-wei-bu-shu/chu-ci-da-bao.md)
 * [模块挂载](yun-wei-bu-shu/mo-kuai-gua-zai.md)
 
 ## 支持
