@@ -18,7 +18,7 @@
 1. 页面打开**【新物流系统】**-【**集成中心**】-【**系统设置**】-【**编码规则**】。![](/assets/编码规则主页面.png)
 2. 点击【新建】按钮，创建编码规则后并保存。![](/assets/编码规则新增页面.png)
 
-> 查看[编码规则字段说明。](/kuo-zhan/bian-ma-gui-ze/bian-ma-gui-ze-zi-duan-shuo-ming.md)
+> 查看[编码规则字段说明](/kuo-zhan/bian-ma-gui-ze/bian-ma-gui-ze-zi-duan-shuo-ming.md)。
 
 ### 获取编码规则
 
@@ -32,7 +32,7 @@
         </dependency>
    ```
 
-   > 查看[各依赖最新版本号。](/zhi-chi/ge-yi-lai-zui-xin-ban-ben-hao.md)
+   > 查看[各依赖最新版本号](/zhi-chi/ge-yi-lai-zui-xin-ban-ben-hao.md)。
 
 2. 声明接口：
 
