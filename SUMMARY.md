@@ -19,12 +19,12 @@
 ## 运维部署
 
 * [打包指引](yun-wei-bu-shu/da-bao-zhi-yin.md)
-  * [初次打包](yun-wei-bu-shu/chu-ci-da-bao.md)
+  * [初次打包准备](yun-wei-bu-shu/chu-ci-da-bao.md)
 * [模块挂载](yun-wei-bu-shu/mo-kuai-gua-zai.md)
 
 ## 支持
 
 * [各依赖最新版本号](zhi-chi/ge-yi-lai-zui-xin-ban-ben-hao.md)
 * [第三方系统接入](zhi-chi/di-san-fang-xi-tong-jie-ru.md)
-* 开源贡献
+* [开源贡献](zhi-chi/kai-yuan-gong-xian.md)
 
