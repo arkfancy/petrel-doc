@@ -4,6 +4,9 @@
 
 ## 开始
 
+* [开发准备](kai-shi/kai-fa-zhun-bei.md)
+  * [setting.xml模板](kai-shi/kai-fa-zhun-bei/settingxmlmo-ban.md)
+  * [hosts模板](kai-shi/kai-fa-zhun-bei/hostsmo-ban.md)
 * [新建项目](kai-shi/xin-jian-xiang-mu.md)
 
 ## 基础功能
