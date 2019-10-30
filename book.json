@@ -9,6 +9,7 @@
 		"ancre-navigation",
 		"-lunr",
 		"-search",
-		"search-pro"
+		"search-pro",
+		"splitter"
 	]
 }
