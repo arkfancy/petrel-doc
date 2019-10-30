@@ -1,0 +1,11 @@
+{
+	"title": "petrel-doc",
+	"author": "arkfancy",
+	"description": "petrel文档",
+	"language": "zh",
+	"plugins": [
+		"chapter-fold",
+		"code",
+		"ancre-navigation"
+	]
+}
