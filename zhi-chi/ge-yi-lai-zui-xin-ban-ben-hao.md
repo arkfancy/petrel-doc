@@ -1,10 +1,10 @@
 # 各依赖最新版本号
 
+校验日期：2019-10-30
+
 ---
 
 ### 编码规则
-
-复核日期：2019-10-30
 
 项目路径：[http://gitlab.wonhigh.cn/scm-base-backend/petrel-itg](http://gitlab.wonhigh.cn/scm-base-backend/petrel-itg)
 

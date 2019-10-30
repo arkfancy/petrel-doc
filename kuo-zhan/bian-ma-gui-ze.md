@@ -1,5 +1,7 @@
 # 编码规则
 
+校验日期：2019-10-30
+
 ---
 
 ## 使用场景
@@ -21,6 +23,7 @@
 ### 获取编码规则
 
 1. 引入编码规则所需依赖：
+
    ```xml
         <dependency>
             <groupId>com.belle</groupId>
@@ -30,6 +33,7 @@
    ```
 
    > 查看[各依赖最新版本号。](/zhi-chi/ge-yi-lai-zui-xin-ban-ben-hao.md)
+
 2. 声明接口：
 
    ```java
@@ -38,6 +42,7 @@
    ```
 
 3. 调用接口获取编码：
+
    ```java
         // codeRuleNo为【编码规则】页面中的规则编号
         String sheetIdCode = sysCodeRuleApi.getSheetIdCode(codeRuleNo);
