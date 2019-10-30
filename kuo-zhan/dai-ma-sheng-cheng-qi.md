@@ -20,10 +20,9 @@
 
 ## 使用方法
 
-1. 在指定目录位置创建如下配置文件（[代码生成器配置文件模板](/kuo-zhan/dai-ma-sheng-cheng-qi/dai-ma-sheng-cheng-qi-pei-zhi-wen-jian-shuo-ming.md)）：![](/assets/代码生成器配置文件放置路径.png)
+1. 在指定目录位置创建如下配置文件:（[代码生成器配置文件模板](/kuo-zhan/dai-ma-sheng-cheng-qi/dai-ma-sheng-cheng-qi-pei-zhi-wen-jian-shuo-ming.md)）：![](/assets/代码生成器配置文件放置路径.png)
 
-2. 打开文件所在目录，点击.bat/bsh启动代码生成器：  
-   ![](/assets/代码生成器界面.png)
+2. 打开文件所在目录，点击.bat/.sh启动代码生成器：![](/assets/代码生成器界面.png)
 
 3. 顶部选择要生成的表类型（//TODO 查看单表多表单据区别）。
 
