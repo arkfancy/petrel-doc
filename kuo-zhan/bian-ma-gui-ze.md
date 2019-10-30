@@ -17,15 +17,22 @@
 ### 获取编码规则
 
 1. 引入编码规则所需依赖：
-   ```
-       <dependency>
-           <groupId>com.belle</groupId>
-           <artifactId>petrel-itg-client</artifactId>
-           <version>last-version</version>
-       </dependency>
-   ```
-2. 在需要获取编码规则的类中声明调用接口：
-
-3. 
+	```xml
+		<dependency>
+			<groupId>com.belle</groupId>
+			<artifactId>petrel-itg-client</artifactId>
+			<version>last-version</version>
+		</dependency>
+	```
+2. 声明接口：
+	```java
+		@Autowired
+		private SysCodeRuleApi codeRuleApi;
+	```
+3. 调用接口获取编码：
+	```java
+		// codeRuleNo为【编码规则】页面中的规则编号
+		String sheetIdCode = sysCodeRuleApi.getSheetIdCode(codeRuleNo);
+	```
 
 
