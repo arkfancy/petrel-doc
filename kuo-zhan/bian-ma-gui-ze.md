@@ -28,13 +28,15 @@
             <version>last-version</version>
         </dependency>
    ```
+
+   > 查看[各依赖最新版本号。](/zhi-chi/ge-yi-lai-zui-xin-ban-ben-hao.md)
 2. 声明接口：
+
    ```java
         @Autowired
         private SysCodeRuleApi codeRuleApi;
    ```
 
-   >
 3. 调用接口获取编码：
    ```java
         // codeRuleNo为【编码规则】页面中的规则编号
