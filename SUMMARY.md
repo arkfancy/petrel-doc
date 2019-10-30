@@ -15,6 +15,8 @@
 * [编码规则](kuo-zhan/bian-ma-gui-ze.md)
   * [编码规则字段说明](kuo-zhan/bian-ma-gui-ze/bian-ma-gui-ze-zi-duan-shuo-ming.md)
 * [简单报表](kuo-zhan/jian-dan-bao-biao.md)
+* [代码生成器](kuo-zhan/dai-ma-sheng-cheng-qi.md)
+  * [代码生成器配置文件模板](kuo-zhan/dai-ma-sheng-cheng-qi/dai-ma-sheng-cheng-qi-pei-zhi-wen-jian-shuo-ming.md)
 
 ## 运维部署
 
