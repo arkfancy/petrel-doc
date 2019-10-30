@@ -2,10 +2,13 @@
 	"title": "petrel-doc",
 	"author": "arkfancy",
 	"description": "petrel文档",
-	"language": "zh",
+	"language": "zh-hans",
 	"plugins": [
 		"chapter-fold",
 		"code",
-		"ancre-navigation"
+		"ancre-navigation",
+		"-lunr",
+		"-search",
+		"search-pro"
 	]
 }
