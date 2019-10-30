@@ -1,3 +1,10 @@
-# My Awesome Book
+# petrel开发文档
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+
+
+## 友情链接
+
+工作小助手：[http://10.0.43.24:8000/](http://10.0.43.24:8000/)
+
+
+
