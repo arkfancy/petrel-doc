@@ -35,7 +35,9 @@
    ```
 
 3. 带上令牌访问体系内服务：  
-   `https://dev-petrel.belle.net.cn/petrel/petrel-uc-api/sysUserApi/page?token={接口返回的token}`
+   ```
+   https://dev-petrel.belle.net.cn/petrel/petrel-uc-api/sysUserApi/page?token={接口返回的token}
+   ```
 
 > 接入者通过接口申请token,有效期为7200秒
 >
