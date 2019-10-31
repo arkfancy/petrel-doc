@@ -1,4 +1,4 @@
-# 导入
+# Excel导入
 
 校验日期：
 
@@ -6,15 +6,45 @@
 
 ## 导入流程
 
-1. 前台请求导入导出服务中心（//TODO 查看前台导入文档）。
-2. 导入中心内解析excel获取导入信息，再调用具体业务工程接口（默认接口/importData）。
+1. 前台请求导入导出服务中心（//TODO 查看前端导入文档）。
+2. 服务中心内解析excel获取导入信息，再调用具体业务工程接口（默认接口/importData）。
 3. 业务工程内进行数据校验等处理，并持久化到数据库。
 
 ---
 
+## 流程详解
 
+> 此详解仅包含从服务中心进入到业务项目后端的后续流程，从业务项目前端到服务中心的流程请//TODO查看前端导入文档。
 
+### BaseSimplePageController
 
+        后端项目的默认入口为`BaseSimplePageController<T>.importData()`，因此如果要实现默认的导入功能需要controller继承`com.belle.petrel.common.web.controller.BaseSimplePageController<T>`或其子类，如果未继承则要编写自定义的`importData()`方法。
+
+```java
+    @ApiOperation(value = "导入数据")
+    @PostMapping("/importData")
+    @ResponseBody
+    public Map<String, Object> importData(HttpServletRequest request, @RequestBody ImportReqDataVO reqData) {
+        if (reqData.getDataList() == null || reqData.getDataList().isEmpty()) {
+            ResultMapUtils.getErrorResultMap(MessageUtils.message("base.page.import.data.null"));
+        }
+
+        Map resultMap;
+        if (reqData.getFrontImport() != null && reqData.getFrontImport()) {
+            resultMap = getBaseSimplePageService().frontImport(reqData, ThreadLocals.getCurrentUser());
+        } else {
+            resultMap = getBaseSimplePageService().importData(reqData, ThreadLocals.getCurrentUser());
+        }
+
+        return resultMap;
+    }
+```
+
+        方法内根据`frontImport`的值判断为前端导入还是后端导入，两者的区别是：前端导入校验完数据后直接返回服务中心，再由服务中心原样返回给前端做进一步处理展示；后端导入校验完数据后会将数据持久化到数据库中，仅返回处理结果。
+
+### BaseSimplePageService
+
+//TODO
 
 ---
 
@@ -77,7 +107,8 @@ true/false
 #### masterFields
 
 ```
-"[{\"field\":\"msCode\",\"value\":\"G01\"}]"
+"[{\"field\":\"msCode\",\"value\":\"G01\"}]
+"
 ```
 
 * 补充字段，用于补充导入模板中不存在的字段。
@@ -112,7 +143,7 @@ true/false
 
 * 是否异步导入。
 
-* 由导入导出服务中心判断是否为异步，业务项目内不需要关注。
+* 由服务中心判断是否为异步，业务项目内不需要关注。
 
 #### errToExcel
 
@@ -123,71 +154,70 @@ true/false
 * 是否将异常信息写入到excel
 * 当为true时返回异常信息。
 * 当为false或null时直接抛出异常信息。
-* 只有为异步导入时有效。  
+* 只有为异步导入时有效。
 
-    /\*\*
+#### url
 
-     \* 写入Excel数据的接口
+```
+"https://dev-petrel.belle.net.cn/petrel/oms-e-api/bmExpressTactics/importData"
+```
 
-     \*/
+* 当前导入数据时的服务接口
+* 用于前端指定后端导入接口，后端项目内不需要关注。
 
-    private String url;
+#### moduleName
+
+```
+
+```
+
+* 模块名称。
+* 服务中心发出通知消息时提示用，后端项目内不需要关注。
+
+#### dataList
+
+```
+[[{"columnKey":"columnValue1"},{"rowNum":1}],[{"columnKey":"columnValue2"},{"rowNum":2}]]
+```
+
+* 解析成列表后的excel数据。
+
+#### index
+
+```
+2
+```
+
+* 当前行号。
+
+#### successCount
+
+```
+100
+```
+
+* 成功条数。
+
+#### fileId
+
+```
+""
+```
+
+* excel文件id。
+* 只在导入导出中心内使用，不传递到业务项目中，目前默认为空，业务项目不需要关注。
+
+---
+
+## 业务场景
+
+//TODO
 
 
 
-    /\*\*
-
-     \* 模块名称
-
-     \*/
-
-    private String moduleName;
 
 
 
-    //===================================================
-
-    /\*\*
-
-     \* excel解析后数据，后台使用
-
-     \*/
-
-    private List&lt;List&lt;String&gt;&gt; dataList;
-
-
-
-    /\*\*
-
-     \* 当前行
-
-     \*/
-
-    @JsonIgnore
-
-    private Integer index = 2;
-
-
-
-    /\*\*
-
-     \* 成功条数
-
-     \*/
-
-    @JsonIgnore
-
-    private Integer successCount = 0;
-
-    /\*\*
-
-     \* 导入Excel文件id
-
-     \*/
-
-    @JsonIgnore
-
-    private String fileId;
 
 
 
