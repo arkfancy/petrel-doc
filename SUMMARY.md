@@ -14,7 +14,7 @@
 ## 进阶功能
 
 * [Excel导入](jin-jie-gong-neng/dao-ru.md)
-* [导出](jin-jie-gong-neng/dao-chu.md)
+* [Excel导出](jin-jie-gong-neng/dao-chu.md)
 
 ## 扩展
 
